@@ -1,0 +1,277 @@
+{
+  "illustratedHeader": {
+    "bgInfo": "Forest of the Berkshires",
+    "bgImage": "../../assets/images/placeholder/600x450.png",
+    "category": "Report",
+    "pageHeader": {
+      "title": "Medical Marijuana Monthly Dashboard",
+      "subTitle": "",
+      "optionalContents": [{
+        "path": "@molecules/listing-table.twig",
+        "data": {
+          "listingTable": {
+            "rows": [{
+              "label": "Date:",
+              "text": "3/2/2017"
+            },{
+              "label": "Authoring Organization:",
+              "text": "Department of Public Health"
+            }]
+          }
+        }
+      },{
+        "path": "@organisms/by-author/rich-text.twig",
+        "data": {
+          "richText": {
+            "property": "",
+            "rteElements": [{
+              "path": "@atoms/11-text/paragraph.twig",
+              "data": {
+                "paragraph" : {
+                  "text": "<b><i>Optional Description of this report</i></b>"
+                }
+              }
+            },{
+              "path": "@atoms/11-text/paragraph.twig",
+              "data": {
+                "paragraph" : {
+                  "text": "Explicabo itaque possimus dignissimos? Repudiandae tempore, fugit illum? Iure error omnis eveniet eius iste molestias. Veritatis provident hic voluptate voluptatibus ullam accusantium, obcaecati tempora soluta praesentium accusamus sed dicta sapiente."
+                }
+              }
+            }]
+          }
+        }
+      }],
+      "headerTags": null
+    }
+  },
+
+
+  "jumpLinks": {
+    "title": "Menu",
+    "links": [{
+      "text": "Rich Text",
+      "href": "rich-text"
+    },{
+      "text": "Downloads",
+      "href": "downloads"
+    },{
+      "text": "Contact",
+      "href": "contact"
+    }]
+  },
+
+  "stackedRows": [{
+    "path": "@atoms/09-media/figure.twig",
+    "data": {
+      "figure": {
+        "align": "right",
+        "image": {
+          "alt": "alt text",
+          "src": "../../assets/images/placeholder/820x460.png",
+          "height": "",
+          "width": ""
+        },
+        "caption": "This is an optional caption that can wrap to multiple lines."
+      }
+    }
+  },{
+    "title": "Row with sidebar",
+    "id": "row-with-sidebar",
+    "pageContent": [{
+      "path": "@base/placeholder.twig",
+      "data": {
+        "placeholder": {
+          "text":"Page content"
+        }
+      }
+    }],
+
+    "sideBar": [{
+      "path": "@base/placeholder.twig",
+      "data": {
+        "placeholder": {
+          "text":"Right Rail"
+        }
+      }
+    }]
+  },{
+    "title": "Full width row",
+    "id": "full-width-row",
+    "pageContent": [{
+      "path": "@atoms/09-media/figure.twig",
+      "data": {
+        "figure": {
+          "align": "right",
+          "image": {
+            "alt": "alt text",
+            "src": "../../assets/images/placeholder/820x460.png",
+            "height": "",
+            "width": ""
+          },
+          "caption": "This is an optional caption that can wrap to multiple lines."
+        }
+      }
+    },{
+      "path": "@base/placeholder.twig",
+      "data": {
+        "placeholder": {
+          "text":"Page content"
+        }
+      }
+    },{
+      "path": "@atoms/11-text/paragraph.twig",
+      "data": {
+        "paragraph" : {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consectetur eligendi recusandae<a class=\"ma__rich-text__footnote js-rich-text-footnote\" id=\"footnoteref1\" title=\"source for this information\" href=\"#footnotemsg1\">1</a>, blanditiis nisi quibusdam, dolor voluptas dolore unde eius, eos esse doloremque enim? Culpa delectus excepturi beatae eos quod distinctio, ipsam ratione ad architecto doloremque modi eius consectetur at facere. Nobis, laboriosam, officia. Itaque maiores porro voluptates, sint sed dolore! Omnis, iusto sed est!"
+        }
+      }
+    }],
+
+    "sideBar": []
+  },{
+    "title": "Mix and match as desired",
+    "id": "mix-and-match-as-desired",
+    "pageContent": [{
+      "path": "@base/placeholder.twig",
+      "data": {
+        "placeholder": {
+          "text":"Page content"
+        }
+      }
+    },{
+      "path": "@atoms/11-text/paragraph.twig",
+      "data": {
+        "paragraph" : {
+          "text": "Lorem ipsum dolor sit amet, consectetur<a class=\"ma__rich-text__footnote js-rich-text-footnote\" id=\"footnoteref2\" title=\"source for this information\" href=\"#footnotemsg2\">2</a> adipisicing elit. Tenetur consectetur eligendi recusandae, blanditiis nisi quibusdam, dolor voluptas dolore unde eius, eos esse doloremque enim? Culpa delectus excepturi beatae eos quod distinctio, ipsam ratione ad architecto doloremque modi eius consectetur at facere. Nobis, laboriosam, officia. Itaque maiores porro voluptates, sint sed dolore! Omnis, iusto sed est!"
+        }
+      }
+    }],
+
+    "sideBar": [{
+      "path": "@base/placeholder.twig",
+      "data": {
+        "placeholder": {
+          "text":"Right Rail"
+        }
+      }
+    }]
+  }],
+
+
+  "mainContent": {
+
+    "formDownloads": {
+      "compHeading": {
+        "title": "Downloads",
+        "sub": false,
+        "color": "",
+        "id": "downloads",
+        "centered": ""
+      },
+      "downloadLinks": [{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-doc-pdf.twig",
+          "decorativeLink": {
+            "text": "PDF download item",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "30kb",
+          "format": "PDF"
+        }
+      },{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-doc-docx.twig",
+          "decorativeLink": {
+            "text": "Word download item",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "40kb",
+          "format": "DOCX"
+        }
+      },{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
+          "decorativeLink": {
+            "text": "Online form or information page",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "",
+          "format": "form"
+        }
+      }]
+    },
+
+
+
+    "footnoteList": {
+      "items": [{
+        "number": 1,
+        "target": "#footnoteref1",
+        "id": "footnotemsg1",
+        "richText": {
+          "property": "",
+          "rteElements": [{
+            "path": "@atoms/11-text/paragraph.twig",
+            "data": {
+              "paragraph" : {
+                "text": "<b><i>Optional Description of this policy</i></b>"
+              }
+            }
+          },{
+            "path": "@atoms/11-text/paragraph.twig",
+            "data": {
+              "paragraph" : {
+                "text": "Explicabo itaque possimus dignissimos? Repudiandae tempore, fugit illum? Iure error omnis eveniet eius iste molestias. Veritatis provident hic voluptate voluptatibus ullam accusantium, obcaecati tempora soluta praesentium accusamus sed dicta sapiente."
+              }
+            }
+          }]
+        }
+      },{
+        "number": 2,
+        "target": "#footnoteref2",
+        "id": "footnotemsg2",
+        "richText": {
+          "property": "",
+          "rteElements": [{
+            "path": "@atoms/11-text/paragraph.twig",
+            "data": {
+              "paragraph" : {
+                "text": "<b><i>Optional Description of this policy</i></b>"
+              }
+            }
+          },{
+            "path": "@atoms/11-text/paragraph.twig",
+            "data": {
+              "paragraph" : {
+                "text": "Explicabo itaque possimus dignissimos? Repudiandae tempore, fugit illum? Iure error omnis eveniet eius iste molestias. Veritatis provident hic voluptate voluptatibus ullam accusantium, obcaecati tempora soluta praesentium accusamus sed dicta sapiente."
+              }
+            }
+          }]
+        }
+      }]
+    },
+
+    "references": {
+      "label": "Referenced Legislation:",
+      "taxonomyTerms": [{
+        "href": "#",
+        "text": "Reference 1"
+      },{
+        "href": "#",
+        "text": "Reference 2"
+      }]
+    }
+  }
+
+
+}

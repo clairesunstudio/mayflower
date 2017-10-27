@@ -1,0 +1,101 @@
+
+{# site header #}
+{% block header %}{% endblock %}
+
+<main id="main-content" class="ma__policy-advisory" tabindex="-1">
+  <div class="pre-content">
+    {% block preContent %}
+      {% include "@organisms/by-template/illustrated-header.twig" %}
+    {% endblock %}
+  </div>
+  <div class="ma__stacked-row">
+    {% block stackedRowContent %}
+      {% if jumpLinks %}
+        <div class="ma__stacked-row__jump-links">
+          {% include "@organisms/by-template/jump-links.twig" %}
+        </div>
+      {% endif %}
+
+      {# backward compatible with v 5.6 - stackedRowSections becomes stackedRows #}
+      {% if stackedRowSections %}
+        {% set stackedRows = stackedRowSections %}
+      {% endif %}
+
+      {% for stackedRow in stackedRows %}
+        {% set stackedRowRestriction = stackedRow.sideBar|length ? '' : 'ma__stacked-row--restricted' %}
+
+        <section class="ma__stacked-row__section {{ stackedRowRestriction }}">
+          {% if stackedRow.title %}
+            <div class="ma__stacked-row__container">
+              <div class="ma__stacked-row__title">
+                {% set compHeading = {
+                    "title": stackedRow.title,
+                    "sub": "",
+                    "color": "",
+                    "id": stackedRow.id
+                  }
+                %}
+                {% include "@atoms/04-headings/comp-heading.twig" %}
+              </div>
+            </div>
+          {% endif %}
+          <div class="ma__stacked-row__container">
+            <div class="main-content {{ stackedRow.sideBar|length ? 'main-content--two' : 'main-content--full' }}">
+              <div class="page-content">
+                {% for content in stackedRow.pageContent %}
+                  {% include content.path with content.data %}
+                {% endfor %}
+
+                {% block pageContent %}
+                  {% include "@base/placeholder.twig" with {'placeholder':{'text':'Page Content'}} %}
+                {% endblock %}
+
+
+
+              </div>
+              {% if stackedRow.sideBar|length %}
+                <aside class="sidebar">
+                  {% for sidebar in stackedRow.sideBar %}
+                    {% include sidebar.path with sidebar.data %}
+                  {% endfor %}
+                </aside>
+              {% endif %}
+            </div>
+          </div>
+        </section>
+
+      {% endfor %}
+      
+        <section class="ma__stacked-row__section">
+          <div class="ma__stacked-row__container">
+            <div class="main-content main-content--two">
+              {% if mainContent.formDownloads %}
+                {% set formDownloads = mainContent.formDownloads %}
+                {% include "@organisms/by-author/form-downloads.twig" %}
+              {% endif %}
+
+              {% if mainContent.footnoteList %}
+                {% set footnoteList = mainContent.footnoteList %}
+                {% include "@organisms/by-author/footnote-list.twig" %}
+              {% endif %}
+
+              {% if mainContent.references %}
+                {% set headerTags = mainContent.references %}
+                {% include "@molecules/header-tags.twig" %}
+              {% endif %}
+            </div>
+          </div>
+        </section>
+
+    {% endblock %}
+  </div>
+  <div class="post-content">
+    {% block postContent %}
+      {% include "@base/placeholder.twig" with {'placeholder':{'text':'Post Content'}} %}
+    {% endblock %}
+  </div>
+  {% block schemaContent %}{% endblock %}
+</main>
+
+{# site footer #}
+{% block footer %}{% endblock %}
