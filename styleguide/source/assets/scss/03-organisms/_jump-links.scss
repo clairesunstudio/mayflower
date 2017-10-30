@@ -53,9 +53,37 @@
       top: 80px;
     }
 
-    @media ($bp-medium-min) {
-      top: 15px;
+    @media ($bp-small-min) {
+    .ma__jump-links{
+        &__inner {
+          height: 0;
+          padding-bottom: 0;
+        }
 
+        &__column {
+          display: none;
+        }
+
+        &__toggle-link {
+          display: block;
+          top: -90px;
+          right: 50px;
+          color: white;
+        }
+      }
+
+      &.is-open {
+        .ma__jump-links__inner{
+          height: auto;
+          padding-bottom: 35px;
+        }
+        .ma__jump-links__column{
+          display: block;
+        }
+      }
+    }
+
+    @media ($bp-medium-min) {
       .translated-rtl &,
       .translated-ltr & {
         top: 55px;
@@ -89,22 +117,6 @@
       &:before {
         content: "true"; // hook for JS to do the mobile sticky
       }
-
-      // &[data-sticky='middle'] {
-      //   position: fixed;
-      //     top: 40px;
-      //
-      //   .translated-rtl &,
-      //   .translated-ltr & {
-      //     top: 80px;
-      //   }
-      // }
-
-      // &[data-sticky='bottom'] {
-      //   position: absolute;
-      //     top: auto; // height of one line of text
-      //     bottom: -30px; // compensate for bottom margin
-      // }
     }
   }
 
