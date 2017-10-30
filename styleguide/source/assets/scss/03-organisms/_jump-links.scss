@@ -41,12 +41,42 @@
     }
   }
 
-  &__links {
-    @include clearfix;
-    position: relative;
+  &[data-sticky='middle'] {
     transition: top .3s;
     width: 100%;
     z-index: $z-sticky-content;
+    position: fixed;
+      top: 0px;
+
+    .translated-rtl &,
+    .translated-ltr & {
+      top: 80px;
+    }
+
+    @media ($bp-medium-min) {
+      top: 15px;
+
+      .translated-rtl &,
+      .translated-ltr & {
+        top: 55px;
+      }
+    }
+  }
+
+  &[data-sticky='bottom'] {
+    position: absolute;
+      top: auto; // height of one line of text
+      bottom: -30px; // compensate for bottom margin
+
+    @media ($bp-medium-min) {
+      top: auto;
+      bottom: -15px;
+    }
+  }
+
+  &__links {
+    @include clearfix;
+    position: relative;
 
     &:before {
       content: "false"; // hook for JS to do the mobile sticky
@@ -60,21 +90,21 @@
         content: "true"; // hook for JS to do the mobile sticky
       }
 
-      &[data-sticky='middle'] {
-        position: fixed;
-          top: 40px;
+      // &[data-sticky='middle'] {
+      //   position: fixed;
+      //     top: 40px;
+      //
+      //   .translated-rtl &,
+      //   .translated-ltr & {
+      //     top: 80px;
+      //   }
+      // }
 
-        .translated-rtl &,
-        .translated-ltr & {
-          top: 80px;
-        }
-      }
-
-      &[data-sticky='bottom'] {
-        position: absolute;
-          top: auto; // height of one line of text
-          bottom: -30px; // compensate for bottom margin
-      }
+      // &[data-sticky='bottom'] {
+      //   position: absolute;
+      //     top: auto; // height of one line of text
+      //     bottom: -30px; // compensate for bottom margin
+      // }
     }
   }
 
