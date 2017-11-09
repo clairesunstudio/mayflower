@@ -2,7 +2,43 @@
   "mainNav": [{
     "href":"#",
     "text":"Home",
-    "active":""
+    "active":"",
+    "subNav":[{
+      "href":"#",
+      "text":"Executive Summary",
+      "active":"",
+      "subNav":[{
+        "href":"#",
+        "text":"Governor's Message"
+      },{
+        "href":"#",
+        "text":"Fiscal Health and Prospects"
+      },{
+        "href":"#",
+        "text":"Acknowledgements"
+      }]
+    },{
+      "href":"#",
+      "text":"Downloads",
+      "active":""
+    },{
+      "href":"#",
+      "text":"Related Links",
+      "active":"",
+      "subNav":[{
+        "href":"#",
+        "text":"Budgetary Process"
+      },{
+        "href":"#",
+        "text":"Budget Summary"
+      },{
+        "href":"#",
+        "text":"Related Organizations"
+      },{
+        "href":"#",
+        "text":"Related Legislation"
+      }]
+    }]
   },{
     "href":"#",
     "text":"Appropriation Recommendation",
@@ -19,21 +55,7 @@
     }]
   },{
     "href":"#",
-    "text":"Executive Summary",
-    "active":"",
-    "subNav":[{
-      "href":"#",
-      "text":"Governor's Message"
-    },{
-      "href":"#",
-      "text":"Fiscal Health and Prospects"
-    },{
-      "href":"#",
-      "text":"Acknowledgements"
-    }]
-  },{
-    "href":"#",
-    "text":"Sections",
+    "text":"Budgetary Sections",
     "active":"",
     "subNav":[{
       "href":"#",
@@ -75,27 +97,6 @@
     },{
       "href":"#",
       "text":"Appendix"
-    }]
-  },{
-    "href":"#",
-    "text":"Downloads",
-    "active":""
-  },{
-    "href":"#",
-    "text":"Related Links",
-    "active":"",
-    "subNav":[{
-      "href":"#",
-      "text":"Budgetary Process"
-    },{
-      "href":"#",
-      "text":"Budget Summary"
-    },{
-      "href":"#",
-      "text":"Related Organizations"
-    },{
-      "href":"#",
-      "text":"Related Legislation"
     }]
   }
 ]
