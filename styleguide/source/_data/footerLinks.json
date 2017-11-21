@@ -1,49 +1,43 @@
 {
   "footerLinks": {
     "items": [{
-      "heading": "FooterLinks1",
-      "id": "FooterLinks1",
+      "heading": "Budgetary Info",
+      "id": "Budgetary Info",
       "links": [{
         "href": "#",
-        "text": "Living"
+        "text": "Budgetary Process"
       },{
         "href": "#",
-        "text": "Working"
+        "text": "Budget Summary fy2018"
       },{
         "href": "#",
-        "text": "Learning"
-      },{
-        "href": "#",
-        "text": "Visiting & Exploring"
-      },{
-        "href": "#",
-        "text": "Your Government"
+        "text": "Budget Summary fy2017"
       }]
     },{
-      "heading": "FooterLinks2",
-      "id": "FooterLinks2",
+      "heading": "Related Links",
+      "id": "Related Links",
       "links": [{
         "href": "#",
-        "text": "Contact Us"
+        "text": "Office of the Governor"
       },{
         "href": "#",
-        "text": "State Data"
+        "text": "Executive Office for Administration and Finance"
       },{
         "href": "#",
-        "text": "Feedback"
+        "text": "Article 87"
       }]
     },{
-      "heading": "FooterLinks3",
-      "id": "FooterLinks3",
+      "heading": "About",
+      "id": "About",
       "links": [{
         "href": "#",
-        "text": "Sitemap"
-      },{
-        "href": "#",
-        "text": "Disclaimer"
+        "text": "Downloads"
       },{
         "href": "#",
         "text": "Site Policies"
+      },{
+        "href": "#",
+        "text": "Contact Us"
       }]
     }]
   }
