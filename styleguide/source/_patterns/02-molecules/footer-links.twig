@@ -1,8 +1,9 @@
 <section class="ma__footer-links">
   {% for item in footerLinks.items %}
     <nav role="navigation" aria-labeledby="{{ item.id }}">
-      <h2 class="visually-hidden" id="{{ item.id }}">{{ item.heading }}</h2>
+
       <ul class="ma__footer-links__items">
+        <p id="{{ item.id }}" style="border-bottom: 1px solid black; padding-bottom: 20px">{{ item.heading }}</p>
         {% for link in item.links %}
           <li class="ma__footer-links__item">
             <a href="{{ link.href }}" class="ma__footer-links__link">{{ link.text }}</a>
