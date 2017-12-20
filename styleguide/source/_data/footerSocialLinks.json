@@ -2,27 +2,23 @@
   "footerSocialLinks": {
     "items": [{
       "altText": "Follow us on Facebook",
-      "href": "#",
+      "href": "https://www.facebook.com/massgov",
       "icon": "@atoms/05-icons/svg-facebook.twig"
     },{
       "altText": "Follow us on Twitter",
-      "href": "#",
+      "href": "https://twitter.com/massgov",
       "icon": "@atoms/05-icons/svg-twitter.twig"
     },{
       "altText": "Follow us on LinkedIn",
-      "href": "#",
+      "href": "https://www.linkedin.com/company/commonwealth-of-massachusetts",
       "icon": "@atoms/05-icons/svg-linkedin.twig"
     },{
       "altText": "Follow us on Youtube",
-      "href": "#",
+      "href": "https://www.youtube.com/user/massgov",
       "icon": "@atoms/05-icons/svg-youtube.twig"
     },{
-      "altText": "Read our blog",
-      "href": "#",
-      "icon": "@atoms/05-icons/svg-blog.twig"
-    },{
       "altText": "Follow us on Instagram",
-      "href": "#",
+      "href": "https://www.instagram.com/massgov/",
       "icon": "@atoms/05-icons/svg-instagram.twig"
     }]
   }
